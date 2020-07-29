@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title>David Zeng</title>
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu" rel="stylesheet">
+		<link rel="shortcut icon" type="image/png" href="assets/favicon.ico">
+		<style>
+				* {
+					font-family: 'Open Sans', sans-serif;
+				}
+		</style>
+		<link rel="stylesheet" href="./styling/css.css">
+	</head>
+	<body>
+		<div id="main">
+			<div id="greetingContainer">
+				<div id="hello">
+					Hello there,
+				</div>
+				<div id="name">
+					My name is
+					<img id="speaker" src="assets/speaker.svg" onclick="play()">
+					David Zeng
+				</div>
+				<ul id="icons">
+					<li>
+						<a href="assets/resume.pdf" target="_blank">
+							<img src="assets/resume.svg">
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/davidzengming" target="_blank">
+							<img src="assets/github.svg">
+						</a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/davidzengm" target="_blank">
+							<img src="assets/linkedin.svg">
+						</a>
+					</li>
+					<li>
+						<a href="mailto:davidzengming@gmail.com" target="_blank">
+							<img src="assets/email.svg">
+						</a>
+					</li>
+				</div>
+			<div id="introduction">
+				<p>I like coding, a lot! I worked as a <span class="important">Software Engineer</span> at a startup called Naborly, and have interned at other companies though not as a developer. I majored in Mechanical Engineering at the University of Waterloo.</p>
+				<p>I am also the creator of <a id="metagrab" href="https://github.com/davidzengming/MetaGrab" target="_blank">Metagrab</a>, an application that helps gamers connect and be informed about their favorite and/or upcoming games.</p>
+				<p>My hobbies and interests include traveling and eating, bubble tea, gaming, soccer and badminton.</p>
+			</div>
+			<h2 id="copyright">Copyright © David Zeng</h2>
+		</div>
+		<!-- scripts --->
+		<script>
+			window.onload = () => {
+				document.getElementById('copyright').innerText += ` ${new Date().getFullYear()}`;
+			}
+		</script>
+	</body>
+</html>

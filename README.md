@@ -1,2 +1,2 @@
-# metagrabio
-Landing page for Metagrab mobile app.
+# Metagrab app landing page
+www.metagrab.io
