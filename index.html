@@ -1,61 +1,103 @@
 <html>
 	<head>
-		<title>David Zeng</title>
+		<title>Metagrab | A blazing fast gaming social platform app</title>
 		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu" rel="stylesheet">
-		<link rel="shortcut icon" type="image/png" href="assets/favicon.ico">
+		<link rel="shortcut icon" type="image/png" href="assets/images/metagrab-favicon.png">
 		<style>
 				* {
 					font-family: 'Open Sans', sans-serif;
 				}
 		</style>
 		<link rel="stylesheet" href="./styling/css.css">
+
+		<!-- Javascript -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="assets/javascript/script.js" type="text/javascript" charset="utf-8" async defer></script>
 	</head>
 	<body>
-		<div id="main">
-			<div id="greetingContainer">
-				<div id="hello">
-					Hello there,
-				</div>
-				<div id="name">
-					My name is
-					<img id="speaker" src="assets/speaker.svg" onclick="play()">
-					David Zeng
-				</div>
-				<ul id="icons">
-					<li>
-						<a href="assets/resume.pdf" target="_blank">
-							<img src="assets/resume.svg">
-						</a>
-					</li>
-					<li>
-						<a href="https://github.com/davidzengming" target="_blank">
-							<img src="assets/github.svg">
-						</a>
-					</li>
-					<li>
-						<a href="https://www.linkedin.com/in/davidzengm" target="_blank">
-							<img src="assets/linkedin.svg">
-						</a>
-					</li>
-					<li>
-						<a href="mailto:davidzengming@gmail.com" target="_blank">
-							<img src="assets/email.svg">
-						</a>
-					</li>
-				</div>
-			<div id="introduction">
-				<p>I like coding, a lot! I worked as a <span class="important">Software Engineer</span> at a startup called Naborly, and have interned at other companies though not as a developer. I majored in Mechanical Engineering at the University of Waterloo.</p>
-				<p>I am also the creator of <a id="metagrab" href="https://github.com/davidzengming/MetaGrab" target="_blank">Metagrab</a>, an application that helps gamers connect and be informed about their favorite and/or upcoming games.</p>
-				<p>My hobbies and interests include traveling and eating, bubble tea, gaming, soccer and badminton.</p>
+		<header>
+			<div class="header-icon">
+				<img src="assets/images/metagrab-icon.svg">
 			</div>
-			<h2 id="copyright">Copyright © David Zeng</h2>
+			<div class="header-subtitle">
+				<h1>Metagrab</h1>
+				<p>A blazing-fast platform<br>built for all gaming needs.</p>
+			</div>
+		</header>
+
+		<p class="intro">Metagrab is a gaming social platform app built for users to discover new games, find upcoming major releases, and chat with other users on the platform. From discovering games to jumping into discussions is only a few taps away, joining a community has never been this easy.</p>
+
+		<div class="download-button">
+			<a href="https://itunes.apple.com/app/-1">
+			<img src="assets/images/download-on-appstore.svg"></a>
 		</div>
-		<!-- scripts --->
-		<script>
-			window.onload = () => {
-				document.getElementById('copyright').innerText += ` ${new Date().getFullYear()}`;
-			}
-		</script>
+
+		<div role="main" class="main">
+			<div id="highlights">
+				<div class="highlight">
+					<div class="highlight-inner">
+						<div class="highlight-text">
+							<h2></h2>
+							<p></p>
+						</div>
+						<div class="highlight-img">
+							<img src="assets/images/iphone-pic-1.png">
+						</div>
+					</div>
+				</div>
+
+				<div class="highlight">
+					<div class="highlight-inner">
+						<div class="highlight-text">
+							<h2></h2>
+							<p></p>
+						</div>
+						<div class="highlight-img">
+							<img src="assets/images/iphone-pic-2.png">
+						</div>
+					</div>
+				</div>
+
+				<div class="highlight">
+					<div class="highlight-inner">
+						<div class="highlight-text">
+							<h2></h2>
+							<p></p>
+						</div>
+						<div class="highlight-img">
+							<img src="assets/images/iphone-pic-3.png">
+						</div>
+					</div>
+				</div>
+
+				<div class="highlight">
+					<div class="highlight-inner">
+						<div class="highlight-text">
+							<h2></h2>
+							<p></p>
+						</div>
+						<div class="highlight-img">
+							<img src="assets/images/iphone-pic-4.png">
+						</div>
+					</div>
+				</div>
+
+				<div class="highlight ipad">
+					<div class="highlight-inner">
+						<div class="highlight-text">
+							<h2></h2>
+							<p></p>
+						</div>
+						<div class="highlight-img">
+							<img src="assets/images/ipad-pic-1.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			<h2 class="others"></h2>
+
+			<div class="download-button"><a href="https://itunes.apple.com/app/-1"><img src="assets/images/download-on-appstore.svg"></a></div>
+		</div>
 	</body>
 </html>
