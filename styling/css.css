@@ -84,11 +84,11 @@ body {
 }
 
 .main #highlights .highlight:not(.ipad):nth-child(odd) .highlight-text {
-	padding-right: 200px;
+	padding-right: 150px;
 }
 
 .main #highlights .highlight.ipad:nth-child(odd) .highlight-text {
-	padding-right: 200px;
+	padding-right: 150px;
 }
 
 .main #highlights .highlight:not(.ipad) .highlight-inner .highlight-text {
@@ -97,7 +97,7 @@ body {
 }
 
 .main #highlights .highlight:not(.ipad):nth-child(even) .highlight-text {
-	padding-left: 200px;
+	padding-left: 150px;
 }
 
 .main #highlights .highlight:not(.ipad):nth-child(even) {
