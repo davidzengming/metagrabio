@@ -1,10 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+    font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+    line-height: 1.5;
+}
+
 .header-icon img {
   width: 200px;
   height: 200px;
 }
 
-#header {
-  display:inline-block;
-  text-align:center;
+p {
+	font-size: 1.15em;
+	color: #2c2f33;
 }
 
+h1 {
+	font-size: 2.8rem;
+  	margin-bottom: 0.2em;
+	font-weight: 600;
+}
+
+h2 {
+	font-size: 38px;
+	font-weight: 700;
+	margin-bottom: 20px;
+	color:  #23272a;
+	line-height: 125%;
+}
+
+header .header-subtitle p {
+	  color: #7F7F82;
+	  font-size: 1.125rem;
+}
+
+.download-button img {
+	display: block;
+	margin: auto;
+	width: 200px;
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 0 20px;
+	margin-top: 40px;
+}
+
+header .header-icon {
+	display: block;
+}
+
+header .header-icon img {
+	border-radius: 30%;
+}
+
+.intro {
+	max-width: 600px;
+	margin:auto;
+	padding: 0 20px;
+	margin-top: 40px;
+}
+
+header .header-subtitle {
+	padding-left: 30px;
+	display: block;
+	text-align: left;
+}
+
+.intro {
+	max-width: 600px;
+}
+
+body {
+  font-size: 16px;
+  margin: auto;
+}
+
+.main #highlights .highlight:not(.ipad):nth-child(odd) .highlight-text {
+	padding-right: 200px;
+}
+
+.main #highlights .highlight.ipad:nth-child(odd) .highlight-text {
+	padding-right: 200px;
+}
+
+.main #highlights .highlight:not(.ipad) .highlight-inner .highlight-text {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.main #highlights .highlight:not(.ipad):nth-child(even) .highlight-text {
+	padding-left: 200px;
+}
+
+.main #highlights .highlight:not(.ipad):nth-child(even) {
+	background: #f9f9f9;
+}
+
+.highlight-inner {
+	display: flex;
+	margin: auto;
+	max-width: 900px;
+	align-items: center;
+}
+
+.main #highlights .highlight-inner .highlight-img img {
+	max-width: 300px;
+	margin: 20px auto;
+}
+
+.main #highlights .ipad .highlight-inner .highlight-img img {
+	max-width: 400px;
+	margin: 20px auto;
+}
+
+.highlight-inner .highlight-text {
+	display: block;
+	width: 500px;
+}
+
+@media (max-width: 549px) {
+  footer a {
+    display: block;
+    text-align: center;
+    line-height: 2;
+  }
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin: 50px 0;
+  text-align: center;
+  clear: both;
+}
+
+footer a {
+  color: #A9A9A9;
+  text-decoration: none;
+  font-weight: 500;
+}
